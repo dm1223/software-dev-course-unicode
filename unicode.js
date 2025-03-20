@@ -86,20 +86,48 @@ Assign the result to a variable named swappedString.
 //Starter Code
 // Task 1
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint; 
+let thirdCodePoint; 
+
+let inputString1 = "Code";
+console.log(inputString1.charCodeAt(1));
+console.log(inputString1.charCodeAt(3));
+let firstCodePoint = 111;
+let thirdCodepoint = 101;
+console.log(`The first code point is ${firstCodePoint} and the third code point is ${thirdCodepoint}`);
+
+
+
+
+
+
 
 // Task 2
-let wordFromCodePoints; // Your code here
+let wordFromCodePoints; 
+
+let codes = [72, 101, 108, 108];
+let final = String.fromCharCode(codes[0]) + String.fromCharCode(codes[1]) + String.fromCharCode(codes[2]) + String.fromCharCode(codes[3]);
+console.log(final);
+let wordFromCodePoints = "Hell"; 
+console.log(wordFromCodePoints);
+
 
 // Task 3
 let inputString2 = "Launch";
-let swappedString; // Your code here
+let swappedString; 
+
+
+let inputString2 = "Launch";
+console.log(inputString2.charCodeAt(0));
+console.log(inputString2.charCodeAt(5));
+let inputString3 = [76, 97, 117, 110, 99, 104]
+let swappedString = String.fromCharCode(inputString3[5]) + String.fromCharCode(inputString3[1]) + String.fromCharCode(inputString3[2]) + String.fromCharCode(inputString3[3]) + String.fromCharCode(inputString3[4]) + String.fromCharCode(inputString3[0]);
+console.log(swappedString);
 
 // Log all results
 console.log({
-  firstCodePoint,
-  thirdCodePoint,
-  wordFromCodePoints,
-  swappedString,
+  firstCodePoint, 111
+  thirdCodePoint, 101
+  wordFromCodePoints, "Hell"
+  swappedString, hauncL
 });
